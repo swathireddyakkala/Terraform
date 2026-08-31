@@ -17,3 +17,11 @@ resource "aws_s3_bucket" "Demo-storage" {
   }
 }
 
+resource "aws_ebs_volume" "ebs" {
+  availability_zone = var.availability_zone
+  size              = var.ebs_size
+
+  tags = {
+    Name = var.ebs_name
+  }
+}

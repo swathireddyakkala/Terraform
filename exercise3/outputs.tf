@@ -1,3 +1,4 @@
+
 output "web01_instance_id" {
   description = "EC2 instance ID"
   value       = module.web01.instance_id
@@ -37,4 +38,12 @@ output "s3_bucket_id" {
 output "s3_bucket_arn" {
   description = "s3 bucket ARN"
   value       = module.s3.bucket_arn
+}
+
+output "ebs_volume_id" {
+  value = module.ebs.volume_id
+}
+
+output "ebs_volume_arn" {
+  value = module.ebs.volume_arn
 }

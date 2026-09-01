@@ -29,3 +29,12 @@ module "s3" {
   environment = var.environment
 }
 
+module "ebs" {
+  source = "./modules/ebs"
+
+  availability_zone = "us-east-1a"
+  size              = 10
+  type              = "gp3"
+  name              = "terraform-ebs-volume"
+}
+

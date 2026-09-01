@@ -5,4 +5,5 @@ instance_type = "t3.micro"
 key_name      = "VCS-keypair"
 ec2_sg        = "sg-083ac20d9037bb156"
 environment   = "dev"
-
+ebs_size          = 10
+ebs_type          = "gp3"

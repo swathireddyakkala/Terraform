@@ -12,7 +12,17 @@ variable "ami_id" {
   type        = string
   description = "AMI ID for the EC2  instance"
 }
+variable "ebs_size" {
+  description = "EBS volume size in GB"
+  type        = number
+  default     = 10
+}
 
+variable "ebs_type" {
+  description = "EBS volume type"
+  type        = string
+  default     = "gp3"
+}
 variable "environment" {
   type        = string
   description = "Name of the instance"

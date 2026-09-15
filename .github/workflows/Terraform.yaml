@@ -45,6 +45,7 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -input=false   -var-file="dev.tfvars" -auto-approve     
 
-  # done        
+      - name: Terraform Destroy
+        run: terraform destroy -input=false -var-file="dev.tfvars" -auto-approve
 
 
